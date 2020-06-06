@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>画文字</title>
+  <title>艺术文字</title>
   <style>
     body {
       text-align: center;
@@ -24,8 +24,7 @@
   var cas = document.querySelector("canvas");
   var ctx = cas.getContext("2d");
 
-  ctx.font = "50px 宋体";
-  // ctx.strokeText("hello world ",100,500);
+  ctx.font = "50px Arial";
 
   var g = ctx.createLinearGradient(0, 0, 600, 0);
   g.addColorStop(0, "red");
@@ -33,7 +32,8 @@
   g.addColorStop(1, "black");
 
   ctx.fillStyle = g;
-  ctx.fillText("hello world ", 100, 500);
+  ctx.fillText("床前明月光", 150, 200);
+  ctx.fillText("疑是地上霜", 150, 300);
 </script>
 
 </html>
